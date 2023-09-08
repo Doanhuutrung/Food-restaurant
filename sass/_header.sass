@@ -1,1 +1,183 @@
 @import  '_variables'
+header
+        background-image: url('../img/header/header_bg.jpg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        width:100%
+        height: 799px
+header::before
+        position: absolute
+        top: 34px
+        left: 0
+        width: 100%
+        height: 90px
+        content: ''
+        background-color: rgba(0, 0, 0, 0.6)
+.header_sub-menu
+        height: 34px
+        background-color: $white
+.header_contact-container
+        // display: -webkit-box
+        // display: -ms-flexbox
+        display: flex
+        // -webkit-box-pack: center
+        // -ms-flex-pack: center
+        justify-content: center
+        // -webkit-box-align: center
+        // -ms-flex-align: center
+        align-items: center
+        margin-left: 450px
+.header_phone-cont
+        color: #2b2b2b
+        font-family: "openSans"
+        font-size: 15px
+        font-weight: 400
+        margin-left: 40px
+.header_socials
+        // display: -webkit-box
+        // display: -ms-flexbox
+        display: flex
+.header_time-text,
+.header_time-icon
+        display: inline-block
+
+.header_phone-text,
+.header_phone-icon
+        display: inline-block
+
+.header_time-icon,
+.header_phone-icon
+        width: 15px
+        height: 15px
+        margin-right: 10px
+
+.header_time-icon img,
+.header_phone-icon img
+        width: 100%
+        height: 100%
+        // -o-object-fit: cover
+        object-fit: cover
+
+.header_soc
+        margin-left: 10px
+
+.header_content
+        max-width: 870px
+        color: #fff
+        margin: 0 auto
+        text-align: center
+        line-height: 1.3
+
+.header_title
+        margin-top: 20vh
+        margin-bottom: 42px
+        font-family: 'PacificoRegular'
+        font-size: 106px
+
+.header_text
+        font-size: 25px
+        margin-bottom: 40px
+        font-family: 'TimesRegular'
+
+.header_button
+        border: 1px solid #fff
+        border-radius: 5px
+        padding: 10px 45px
+        display: inline-block
+        color: inherit
+        margin-bottom: 30px
+.sub-menu_wrapper
+        // display: -webkit-box
+        // display: -ms-flexbox
+        display: flex
+        // -webkit-box-pack: justify
+        // -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        max-width: 1184px
+        margin: 0 auto
+        padding: 0 8px
+        height: 100%
+.logo_container
+        position: relative
+        height: 100%
+        width: 260px
+        z-index: 1
+        &::before
+        z-index: -1
+        position: absolute
+        content: ''
+        width: 0
+        height: 0
+        top: -34px
+        left: -45px
+        border-left: 210px solid transparent
+        border-right: 210px solid transparent
+        border-top: 210px solid #e7a331
+
+.logo
+        position: absolute
+        top: -34px
+        left: 64px
+        width: 186px
+        height: 86px
+        margin-top: 21px
+
+        & img
+        width: 100%
+        height: 100%
+        // -o-object-fit: contain
+        object-fit: contain
+
+.header_menu
+        position: relative
+        height: 90px
+        // display: -webkit-box
+        // display: -ms-flexbox
+        display: flex
+        // -webkit-box-pack: justify
+        // -ms-flex-pack: justify
+        justify-content: space-between
+        // -webkit-box-align: center
+        // -ms-flex-align: center
+        align-items: center
+
+.top_nav_menu
+        color: #4d4d4d
+        & ul
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        // -webkit-box-pack: end
+        // -ms-flex-pack: end
+        justify-content: flex-end
+        // -webkit-box-align: center
+        // -ms-flex-align: center
+        align-items: center
+        & ul li
+        margin-left: 45px
+        & ul li a
+        text-decoration: none
+        outline: none
+        color: #fff
+        font-family: "myriad"
+        font-size: 17px
+        padding: 15px 0
+.top_nav_menu ul li a:hover,
+.top_nav_menu ul li a:active,
+.top_nav_menu ul li a:focus
+        border-bottom: 2px solid #fff
+        padding-bottom: 4px
+.top_nav_menu ul li:last-child a
+        display: inline-block
+        color: #e7a331
+        border: 1px solid #fff
+        border-radius: 5px
+        padding: 10px 28px
+.burger
+        display: none
+.logo a:hover
+        opacity: 1
