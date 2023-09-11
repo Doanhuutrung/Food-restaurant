@@ -1143,6 +1143,12 @@ html {
   }
   /*Recipes End */
   /*Footer Start */
+  .footer__crumb-wrapper {
+    display: none;
+  }
+  .footer__crumb-wrapper2 {
+    display: none;
+  }
   .footer__loc-socials a {
     margin: 2px;
   }
