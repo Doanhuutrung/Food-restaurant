@@ -351,7 +351,7 @@ html {
 .wrapper {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 0 8px;
+  padding: 0 14px;
 }
 
 .body {
@@ -360,10 +360,11 @@ html {
 
 /*Head Strat */
 .header {
-  min-height: 100vh;
+  height: 799px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+  max-width: 1500px;
 }
 .header::before {
   position: absolute;
@@ -421,6 +422,7 @@ html {
 }
 
 .header__content {
+  padding-top: 60px;
   max-width: 870px;
   color: #fff;
   margin: 0 auto;
@@ -430,9 +432,9 @@ html {
 
 .header__title {
   margin-top: 20vh;
-  margin-bottom: 42px;
+  margin-bottom: 36px;
   font-family: "pacifico";
-  font-size: 106px;
+  font-size: 6.6rem;
 }
 
 .header__text {
@@ -594,12 +596,14 @@ html {
 
 .about__img {
   position: relative;
+  top: 36px;
+  right: -4px;
 }
 
 .about__sub-img {
   position: absolute;
-  top: 0;
-  left: -30px;
+  top: 45px;
+  left: -19px;
   width: 100%;
   height: 100%;
   transform: rotate(-10deg);
@@ -614,11 +618,15 @@ html {
 .about__title {
   font-family: "pacifico";
   font-size: 30px;
+  margin-top: 16px;
+  margin-left: 8px;
+  margin-bottom: 2px;
 }
 
 .about__subtitle {
   font-size: 38px;
   margin-bottom: 15px;
+  margin-left: 2px;
 }
 
 .about__text {
@@ -632,7 +640,7 @@ html {
 .about__button {
   font-size: 15px;
   color: #fff;
-  padding: 15px 40px;
+  padding: 16px 43px;
   border-radius: 5px;
   background-color: #e7a331;
 }
@@ -649,50 +657,48 @@ html {
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 86px 8px 150px;
+  padding: 136px 8px 150px;
 }
 
 .recipes__img-cont {
-  position: relative;
-  flex: 0 1 670px;
-  height: 550px;
+  position: absolute;
+  height: 554px;
+  width: 670px;
+  top: 97px;
+  right: 0;
 }
 .recipes__img-cont img {
-  position: absolute;
-  top: 0;
-  left: -15px;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .recipes__content-cont {
   z-index: 2;
-  flex: 0 1 530px;
   line-height: 1.2;
   background: url("../img/about/about_bg.jpg") center repeat;
-  padding: 50px;
+  padding: 46px 50px 66px;
+  max-width: 533px;
 }
 
 .recipes__title {
   font-family: "pacifico";
   font-size: 30px;
+  margin-left: -9px;
 }
 
 .recipes__subtitle {
   font-size: 38px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-left: -8px;
 }
 
 .recipes__text {
   font-size: 15px;
   margin-bottom: 50px;
+  max-width: 442px;
 }
 .recipes__text p {
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .recipes__button {
@@ -812,19 +818,16 @@ html {
 /*Exper End */
 /* Footer Start */
 .footer {
-  background: url("../img/footer/footer_bg.jpg") center center no-repeat;
+  background: url("../img/footer/footer_bg.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .footer__wrapper {
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 55px 8px 0;
-  z-index: 2;
+  padding: 55px;
 }
 
 .footer__location-container {
@@ -838,20 +841,25 @@ html {
 .footer__loc-title {
   font-family: "pacifico";
   font-size: 30px;
-  margin-bottom: 60px;
+  margin-top: 5px;
+  margin-bottom: 53px;
+  margin-left: 41px;
 }
 
 .footer__loc-address {
   font-size: 15px;
-  max-width: 213px;
-  margin: 0 auto;
+  max-width: 166px;
+  margin: 6px auto;
   margin-bottom: 10px;
+  margin-left: 166px;
 }
 
 .footer__loc-phone {
   display: block;
   font-size: 15px;
   color: inherit;
+  margin-left: 28px;
+  margin-top: 8px;
 }
 
 .footer__loc-email {
@@ -859,6 +867,7 @@ html {
   font-size: 15px;
   color: inherit;
   margin-bottom: 100px;
+  margin-left: 30px;
 }
 
 .footer__loc-socials {
@@ -891,24 +900,29 @@ html {
   font-family: "pacifico";
   font-size: 30px;
   margin-bottom: 45px;
+  margin-left: -79px;
 }
 
 .footer__hours-wickdays, .footer__hours-time, .footer__hours-weekend, .footer__hours-weektime {
+  font-family: "times";
   font-size: 15px;
   margin-bottom: 13px;
+  margin-left: -76px;
 }
 
 .footer__contact-cont {
   flex: 0 1 33.33%;
   min-width: 320px;
   margin-bottom: 30px;
+  margin-right: 52px;
 }
 
 .footer__contact-title {
   font-family: "pacifico";
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #fff;
+  margin-left: -11px;
 }
 
 .footer__subfooter {
@@ -925,8 +939,8 @@ html {
 
 .footer__crumb-wrapper {
   position: absolute;
-  top: 77px;
-  left: -130px;
+  top: 82px;
+  left: -159px;
   width: 260px;
   height: 260px;
   overflow: hidden;
@@ -998,8 +1012,9 @@ html {
 .footer-form__button {
   font-size: 15px;
   color: #fff;
-  padding: 15px 40px;
-  border-radius: 5px;
+  margin-top: 2px;
+  padding: 15px 50px;
+  border-radius: 7px;
   background-color: #e7a331;
 }
 
@@ -1045,11 +1060,6 @@ html {
   }
   .burger {
     z-index: 10;
-    display: block;
-    position: relative;
-    margin-right: 40px;
-    width: 30px;
-    height: 20px;
   }
   .burger.active_burger:before {
     transform: rotate(45deg);
@@ -1063,6 +1073,11 @@ html {
   }
   .burger.active_burger span {
     transform: scale(0);
+    display: block;
+    position: relative;
+    margin-right: 40px;
+    width: 30px;
+    height: 20px;
   }
   .burger:hover, .burger:active, .burger:focus {
     cursor: pointer;
