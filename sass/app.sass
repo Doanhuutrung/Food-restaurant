@@ -46,7 +46,7 @@ html
 .wrapper
   max-width: 1184px
   margin: 0 auto
-  padding: 0 14px
+  padding: 0 8px
 
 .body
   background-color: #fff
@@ -54,11 +54,10 @@ html
 /*Head Strat
 
 .header
-  height: 799px
+  min-height: 100vh
   background-repeat: no-repeat
-  background-position: center
+  background-position: center center
   background-size: cover
-  max-width: 1500px
 
   &::before
     position: absolute
@@ -106,7 +105,6 @@ html
   margin-left: 10px
 
 .header__content
-  padding-top: 60px
   max-width: 870px
   color: #fff
   margin: 0 auto
@@ -115,10 +113,9 @@ html
 
 .header__title
   margin-top: 20vh
-  margin-bottom: 36px //42px
+  margin-bottom: 42px
   font-family: "pacifico"
-  // font-size: 106px
-  font-size: 6.6rem
+  font-size: 106px
 
 .header__text
   font-size: 25px
@@ -242,7 +239,7 @@ html
   padding: 110px 8px 210px
 
 .about__galery-cont
-  position: relative
+  position: relative  
   flex: 0 0 370px
   height: 309px
   margin-left: 45px
@@ -260,14 +257,11 @@ html
 
 .about__img
   position: relative
-  top: 36px
-  right: -4px
-
 
 .about__sub-img
   position: absolute
-  top: 45px
-  left: -19px
+  top: 0
+  left: -30px
   width: 100%
   height: 100%
   transform: rotate(-10deg)
@@ -280,14 +274,10 @@ html
 .about__title
   font-family: "pacifico"
   font-size: 30px
-  margin-top: 16px
-  margin-left: 8px
-  margin-bottom: 2px
 
 .about__subtitle
   font-size: 38px
   margin-bottom: 15px
-  margin-left: 2px
 
 .about__text
   font-size: 15px
@@ -299,7 +289,7 @@ html
 .about__button
   font-size: 15px
   color: #fff
-  padding: 16px 43px
+  padding: 15px 40px
   border-radius: 5px
   background-color: #e7a331
 
@@ -316,46 +306,44 @@ html
   position: relative
   z-index: 2
   display: flex
-  // justify-content: center
-  // align-items: center
-  padding: 136px 8px 150px
+  justify-content: center
+  align-items: center
+  padding: 86px 8px 150px
 
 .recipes__img-cont
-  position: absolute
-  // flex: 0 1 670px
-  height: 554px
-  width: 670px
-  top: 97px
-  right: 0
+  position: relative
+  flex: 0 1 670px
+  height: 550px
+
   img
+    position: absolute
+    top: 0
+    left: -15px
     width: 100%
     height: 100%
+    object-fit: cover
 
 .recipes__content-cont
   z-index: 2
-  // flex: 0 1 556px //530
+  flex: 0 1 530px
   line-height: 1.2
   background: url("../img/about/about_bg.jpg") center repeat
-  padding: 46px 50px 66px
-  max-width: 533px
+  padding: 50px
 
 .recipes__title
   font-family: "pacifico"
   font-size: 30px
-  // margin-bottom: 20px
-  margin-left: -9px
 
 .recipes__subtitle
   font-size: 38px
-  margin-bottom: 25px //15px
-  margin-left: -8px
+  margin-bottom: 15px
 
 .recipes__text
   font-size: 15px
   margin-bottom: 50px
-  max-width: 442px
+
   p
-    margin-bottom: 2px
+    margin-bottom: 20px
 
 .recipes__button
   font-size: 15px
@@ -462,19 +450,18 @@ html
 /* Footer Start
 
 .footer
-  background: url("../img/footer/footer_bg.jpg") center no-repeat
+  background: url("../img/footer/footer_bg.jpg") center center no-repeat
   background-size: cover
   position: relative
 
 .footer__wrapper
-  // position: relative
+  position: relative
   display: flex
-  // flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: flex-start
-  // padding: 55px 8px 0
-  padding: 55px
-  // z-index: 2
+  padding: 55px 8px 0
+  z-index: 2
 
 .footer__location-container
   flex: 0 1 33.33%
@@ -486,30 +473,24 @@ html
 .footer__loc-title
   font-family: "pacifico"
   font-size: 30px
-  margin-top: 5px
-  margin-bottom: 53px //60
-  margin-left: 41px
+  margin-bottom: 60px
 
 .footer__loc-address
   font-size: 15px
-  max-width: 166px //213
-  margin: 6px auto
+  max-width: 213px
+  margin: 0 auto
   margin-bottom: 10px
-  margin-left: 166px
 
 .footer__loc-phone
   display: block
   font-size: 15px
   color: inherit
-  margin-left: 28px
-  margin-top: 8px
 
 .footer__loc-email
   display: block
   font-size: 15px
   color: inherit
   margin-bottom: 100px
-  margin-left: 30px
 
 .footer__loc-socials
   display: flex
@@ -538,26 +519,21 @@ html
   font-family: "pacifico"
   font-size: 30px
   margin-bottom: 45px
-  margin-left: -79px
 
 .footer__hours-wickdays, .footer__hours-time, .footer__hours-weekend, .footer__hours-weektime
-  font-family: 'times'
   font-size: 15px
   margin-bottom: 13px
-  margin-left: -76px
 
 .footer__contact-cont
   flex: 0 1 33.33%
   min-width: 320px
   margin-bottom: 30px
-  margin-right: 52px
 
 .footer__contact-title
   font-family: "pacifico"
   font-size: 30px
-  margin-bottom: 12px //20
+  margin-bottom: 20px
   color: #fff
-  margin-left: -11px
 
 .footer__subfooter
   height: 60px
@@ -572,8 +548,8 @@ html
 
 .footer__crumb-wrapper
   position: absolute
-  top: 82px //77
-  left: -159px //130
+  top: 77px
+  left: -130px
   width: 260px
   height: 260px
   overflow: hidden
@@ -638,9 +614,8 @@ html
 .footer-form__button
   font-size: 15px
   color: #fff
-  margin-top: 2px
-  padding: 15px 50px
-  border-radius: 7px
+  padding: 15px 40px
+  border-radius: 5px
   background-color: #e7a331
 
 /* Footer End
@@ -690,11 +665,11 @@ html
         transition: 0.5s
       span
         transform: scale(0)
-        display: block
-        position: relative
-        margin-right: 40px
-        width: 30px
-        height: 20px
+    display: block
+    position: relative
+    margin-right: 40px
+    width: 30px
+    height: 20px
 
     &:hover, &:active, &:focus
       cursor: pointer
